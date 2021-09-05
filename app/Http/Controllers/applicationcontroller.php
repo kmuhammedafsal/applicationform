@@ -36,6 +36,11 @@ class applicationcontroller extends Controller
      */
     public function store(Request $request)
     {
+        $this->validate($request,[
+            
+            'mobileno' => 'required|digits:10|unique:App\Models\applicationmodel,mobileno',
+           
+        ]);
         $getstudentname=request('studentname');
         $getmobileno=request('mobileno');
         $getemail=request('email');
@@ -53,7 +58,7 @@ class applicationcontroller extends Controller
        
 
         $application->save();
-        return redirect('/application');
+        return redirect('/');
     }
 
     /**

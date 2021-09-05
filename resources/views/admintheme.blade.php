@@ -24,7 +24,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
   color: white;
   text-decoration: none;
   font-size: 17px;
-  width: 10%; /* Four links of equal widths */
+  width: 33%; /* Four links of equal widths */
   text-align: center;
 }
 
@@ -50,14 +50,14 @@ body {font-family: Arial, Helvetica, sans-serif;}
 <div id="hide">
 
 <div class="navbar">
-  <a class="active" href="/courses"><i class="fa fa-fw fa-home"></i> Course</a> 
-  <a class="active" href="/applicationview"><i class="fa fa-fw fa-home"></i>Applications</a>
-  
-  
  
   
+  <a class="active" href="/"><i class="fa fa-fw fa-home"></i>Application</a>
   
-      <a href="/"><button class="btn btn-outline-success" >logout</button></a>
+  <a class="active" href="/applicationview"><i class="fa fa-fw fa-home"></i>Application view</a>
+  <a class="active" href="/courses"><i class="fa fa-fw fa-home"></i> Course</a> 
+  
+     
      
 </div>
 
